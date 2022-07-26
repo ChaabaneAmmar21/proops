@@ -1,24 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import Welcome from "./Component/Profile";
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Welcome
+        fullName="ReactJS"
+        bio="Bioreactor systems are a vital component in the process of 3D tissue engineering and the formation of tissue constructs. Bioreactors are used to provide a tissue-specific physiological in vitro environment during tissue maturation. Based on the bioreactor technology, various tissue systems can be incubated in vitro."
+        profession="Un développeur React.js freelance expérimenté devra comprendre et pouvoir expliquer en détail le cycle de vie des composants React. D’ailleurs, c’est l’un des gros atouts de cette technologie. Voici un excellent articlepour approfondir la question !"
+      >hello</Welcome>
+    </>
   );
 }
 
